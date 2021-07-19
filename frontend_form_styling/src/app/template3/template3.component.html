@@ -1,0 +1,91 @@
+<link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic|Open+Sans:300,400,500,700|Waiting+for+the+Sunrise|Shadows+Into+Light' rel='stylesheet' type='text/css'>
+<div id='makepdf' #makepdf>
+<div class="wrapper clearfix">
+<div class="left">
+    
+    <div class="name-hero">
+      
+      <div class="me-img"></div>
+      
+      <div class="name-text">
+        
+        <h1> <em>{{Resumedata.name}}</em></h1>
+        <p>{{Resumedata.address}}</p>
+        <p>{{Resumedata.email}}</p> 
+        <p>{{Resumedata.phonenumber}}</p>
+     
+      </div>
+   
+    </div>
+    
+  </div>
+
+  <!--//Employment//-->
+
+ <div class="right">
+     <div class="inner">
+      <section>
+        <div *ngFor="let i of Resumedata.job">
+        <h1>{{i.jobname}}</h1>
+        <p><em>{{i.companyname}}</em></p>
+        <p>{{i.jobdes}}</p>
+        <p> <em>{{i.jobyear}}</em></p>
+      </div>
+      </section>
+      <!--//skills//-->
+      <section>
+        <h1> Skills</h1>
+        <div *ngFor="let i of Resumedata.skills">
+        <ul class="skill-set">
+          <li>{{i.skill}}</li>
+        </ul>
+        </div>
+      </section>
+
+
+<!--//Education//-->
+      
+       <section>
+        <h1>Education Details</h1>
+        <div *ngFor="let i of Resumedata.education">
+        <p> <em>{{i.degree}}</em></p>
+        <p>{{i.specialisation}}</p>
+        <p> <em>{{i.year}}</em></p>
+        <p>{{i.name}}</p>
+         </div>
+      </section>
+       
+      <!--//Languages//-->
+      <section>
+        <h1>Known Languages</h1>
+        <div *ngFor="let i of Resumedata.languages">
+        <ul class="skill-set">
+              <li>{{i.language}}</li>
+                  </ul>
+                </div>
+      </section>
+
+      <!--//Acheivements//-->
+      <section>
+        <h1>Acheivements</h1>
+        
+        <P>{{Resumedata.achievements}}</P>
+      </section>
+
+      <!--//extra//-->
+      <section>
+        <div class="handmade">
+          <p>handmade by <em> Shahnaz</em></p>
+        </div>
+      </section>
+
+      <button type="button" (click)="generatePdf()">Download</button>
+    </div>
+    </div>
+  </div>
+   </div>
+   
+
+
+
+

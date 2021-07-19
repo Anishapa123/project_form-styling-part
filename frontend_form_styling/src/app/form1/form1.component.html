@@ -1,0 +1,73 @@
+
+   <!-- <head>
+       <meta charset="utf-8"> -->
+          <!-- <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" id="bootstrap-css">
+         <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+         <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>  -->
+      <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+   <!-- </head>  -->
+   <body>
+      <div class="container" >
+      <div class="text">
+         Personal Details
+      </div>
+      <form action="#" (ngSubmit)="resumedata1()">
+         <div class="form-row">
+            <div class="input-data">
+               <input name="full_name" id="full_name" type="text" required   [(ngModel)]="http.Resumedata.name" >
+               <div class="underline"></div>
+               <label for="">Full Name</label>
+            </div>
+            <div class="input-data">
+               <input  name="email"type="text" required [(ngModel)]="http.Resumedata.email">
+               <div class="underline"></div>
+               <label for="">Email</label>
+            </div>
+         </div>
+         <div class="form-row">
+            <div class="input-data">
+               <input  name="mobile" type="number" required [(ngModel)]="http.Resumedata.phonenumber">
+               <div class="underline"></div>
+               <label for="">Mobile Number</label>
+            </div>
+            <div class="input-data">
+               <label for="">Date of Birth</label>
+               <input name="dob" type="date" [(ngModel)]="http.Resumedata.dob" >
+               <div class="underline"></div>
+               
+            </div>
+           
+         </div>
+         <div class="form-row">
+            <div class="input-data">
+               <div class="underline"></div>
+               <label for="choose">Gender</label>
+           <select class="" placeholder=""name="degree" [(ngModel)]="http.Resumedata.gender">
+              <option>Male</option>
+              <option>Female</option>
+           </select>
+            </div>
+            <div class="input-data">
+               <input name="Address"   type="text" required  [(ngModel)]="http.Resumedata.address">
+               <div class="underline"></div>
+               <label for="">Address</label>
+            </div>
+         </div>
+         <div class="form-row">
+         <div class="input-data textarea">
+            <textarea rows="5" cols="" name="about" required [(ngModel)]="http.Resumedata.about"></textarea>
+            <div class="underline"></div>
+            <label for="">About You</label>
+            <br />
+            <div class="form-row submit-btn">
+               <div class="input-data">
+                  <div class="inner"></div>
+                  <input  id="submit" name="submit" type="submit" value="Next">
+               </div>
+            </div>
+         </div>
+      </div>
+      </form>
+   </div>
+   
+   </body>

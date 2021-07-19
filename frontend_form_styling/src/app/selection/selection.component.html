@@ -1,0 +1,18 @@
+<div class="control-group">
+    <label class="control-label" for="choose">Backup Your CV</label>
+    <select class="control-label" placeholder="Degree" name="draft" [(ngModel)]="draftID">
+              <option value="select">select</option>
+            <option *ngFor="let i of draft">{{i.draftID}}
+            </option>
+        </select>
+        <button type="button" class="btn btn-primary" [disabled]="check.LoggedIn()" (click)="backup()">backup</button>
+<div class="sel">
+    <button type="button" class="btn btn-primary" [disabled]="!check.LoggedIn()" (click)="temp1()">Template1</button>
+<button type="button" class="btn btn-primary" [disabled]="!check.LoggedIn()" (click)="temp2()">Template2</button>
+<button type="button" class="btn btn-primary" [disabled]="!check.LoggedIn()" (click)="temp3()">Template3</button>
+</div>
+<div class="sel">
+    <button type="button" class="btn btn-primary" [disabled]="!check.LoggedIn()" (click)="generatelink()">Generate Link and send to Email</button>
+<button type="button" class="btn btn-primary" [disabled]="!check.LoggedIn()" (click)="temp2()">Template2</button>
+<button type="button" class="btn btn-primary" [disabled]="!check.LoggedIn()" (click)="temp3()">Template3</button>
+</div>

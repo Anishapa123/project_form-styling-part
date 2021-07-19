@@ -1,0 +1,271 @@
+
+#container {
+    width: 100%;
+    height: 700px;
+    background-color: #E9EAEA;
+    margin: 0;
+    padding: 0
+}
+
+h2 {
+    text-align: center;
+    position: relative;
+    top: 30px;
+    color: chocolate
+}
+
+#user1,
+#user2,
+#user3 {
+    width: 24%;
+    height: 550px;
+    border-radius: 10px;
+    background-color: white;
+    display: inline-block;
+    margin-left: 15px;
+    box-shadow: 5px 5px 5px gray;
+    position: relative;
+    top: 40px;
+    left: 11%
+}
+
+#user1:hover,
+#user2:hover,
+#user3:hover {
+    background-color: cadetblue
+}
+
+#user1_img,
+#user2_img,
+#user3_img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    position: relative;
+    top: 10px;
+    left: 33%
+}
+
+.name {
+    font-size: 20px;
+    font-weight: bold;
+    color: darkblue;
+    text-align: center;
+    position: relative;
+    top: 5px
+}
+
+.location {
+    font-size: 20px;
+    font-weight: bold;
+    color: darkorange;
+    text-align: center;
+    position: relative;
+    top: -10px
+}
+
+.cursor {
+    font-size: 50px;
+    color: palevioletred;
+    margin-left: 10px;
+    position: relative;
+    top: -45px
+}
+
+.text {
+    font-size: 18px;
+    color: darkslategrey;
+    margin-left: 25px;
+    margin-right: 7px;
+    position: relative;
+    top: -115px
+}
+
+@media only screen and (max-width: 1200px) {
+
+    #user1,
+    #user2,
+    #user3 {
+        height: 600px
+    }
+
+    #container {
+        height: 740px
+    }
+}
+
+@media only screen and (max-width: 880px) {
+
+    #user1,
+    #user2,
+    #user3 {
+        height: 750px
+    }
+
+    #container {
+        height: 900px
+    }
+
+    #user1_img,
+    #user2_img,
+    #user3_img {
+        height: 70px;
+        width: 70px
+    }
+
+    .name,
+    .location {
+        font-size: 15px;
+        position: relative;
+        top: 10px
+    }
+}
+
+@media only screen and (max-width: 653px) {
+
+    #user1,
+    #user2,
+    #user3 {
+        height: 800px
+    }
+
+    #container {
+        height: 950px
+    }
+
+    h2 {
+        font-size: 20px
+    }
+}
+
+@media only screen and (max-width: 610px) {
+    #container {
+        height: 1200px
+    }
+
+    #user1,
+    #user2,
+    #user3 {
+        display: block;
+        width: 80%;
+        height: 330px;
+        margin-bottom: 20px
+    }
+
+    #user1_img,
+    #user2_img,
+    #user3_img {
+        position: relative;
+        left: 42%;
+        top: 10px
+    }
+
+    .name {
+        position: relative;
+        top: -7px
+    }
+
+    .location {
+        position: relative;
+        top: -20px
+    }
+
+    .cursor {
+        position: relative;
+        top: -75px
+    }
+
+    .text {
+        position: relative;
+        top: -155px
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #container {
+        height: 1670px
+    }
+
+    #user1,
+    #user2,
+    #user3 {
+        width: 70%;
+        height: 500px
+    }
+}
+
+@media only screen and (max-width: 300px) {
+
+    #user1_img,
+    #user2_img,
+    #user3_img {
+        position: relative;
+        left: 35%;
+        height: 40px;
+        width: 40px
+    }
+
+    #user1,
+    #user2,
+    #user3 {
+        height: 600px
+    }
+
+    #container {
+        height: 2000px
+    }
+}
+
+@media only screen and (max-width: 262px) {
+
+    #user1,
+    #user2,
+    #user3 {
+        height: 750px
+    }
+
+    #container {
+        height: 2600px
+    }
+}
+
+@media only screen and (max-width: 213px) {
+
+    #user1,
+    #user2,
+    #user3 {
+        height: 900px
+    }
+
+    #container {
+        height: 3200px
+    }
+}
+
+@media only screen and (max-width: 192px) {
+
+    #user1,
+    #user2,
+    #user3 {
+        height: 1050px
+    }
+
+    #container {
+        height: 3400px
+    }
+
+    .cursor {
+        margin-left: 2px
+    }
+
+    .text {
+        margin-left: 10px
+    }
+
+    #user1_img,
+    #user2_img,
+    #user3_img {
+        position: relative;
+        left: 22%
+    }
+}

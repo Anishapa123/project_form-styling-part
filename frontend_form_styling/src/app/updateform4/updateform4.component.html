@@ -1,0 +1,156 @@
+<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+
+<body>
+  <div class="container">
+    <div class="text">
+      Skills
+   </div>
+ 
+<form action="#"(ngSubmit)="updatedata4()">
+
+ <div class="form-row"> 
+          <div *ngFor="let i of http.Updatedata.skills">
+            <div class="input-data">
+                 <input type="text" required  name="skill" [(ngModel)]="i.skill">
+                  
+             <div class="underline"></div>
+           <label for=""> Skills</label> 
+          </div>
+          <br>
+        <div class="form-row submit-btn">
+          <div class="input-data">
+             <div class="inner"></div>
+             <input type="submit" id="submit" name="submit"(click)="insert()"value="Add" >
+          </div> 
+       </div>
+</div>
+</div>
+
+ <div class="form-row">
+
+    <div class="text" style="text-align: center;padding-left: 250px;">
+      Other Details
+
+ </div>
+ <br>
+ <br>
+
+    <div class="input-data">
+           <input type="text" required id="full_name" name="full_name" [(ngModel)]="http.Resumedata.achievements">
+           <div class="underline"></div>
+           <label for="">Achievements</label>
+    </div>
+
+        <div *ngFor="let i of http.Resumedata.languages">
+  <div class="input-data">
+          <input type="text" required id="lang" name="lang" [(ngModel)]="i.language">
+    
+           <div class="underline"></div>
+           <label for="">Known Languages</label>
+        </div>
+ </div>
+</div> 
+<br>
+<div class="form-row submit-btn">
+           <div class="input-data">
+              <div class="inner"></div>
+              <input type="submit" id="submit" name="submit"(click)="insert2()"value="Add" >
+   
+           </div>
+          </div>
+<div class="form-row submit-btn" style="padding-left: 250px;">
+      <div class="input-data">
+          <div class="inner" ></div>
+         <input type="submit" name="submit" id="submit"value="Submit" >
+      </div>
+    </div>
+</form> 
+</div>
+</body>
+
+
+<!-- <div class="container">
+	<div class="row">
+	<form class="form-horizontal" (ngSubmit)="updatedata4()">
+<fieldset>
+
+<!-- Form Name -->
+<!-- <legend> Skills</legend> -->
+
+<!--Button -->
+
+<!-- Text input-->
+<!-- <div *ngFor="let i of http.Updatedata.skills">
+<div class="control-group">
+  <label class="control-label" for="skills">
+    Skills
+  </label>
+  <div class="controls">
+    <input  type="text" placeholder="Enter Skills" class="input-xlarge" type="text" name="skill" [(ngModel)]="i.skill">
+
+  </div>
+</div>
+</div> -->
+
+
+<!-- <div class="control-group">
+    <label class="control-label" for="submit"></label>
+    <div class="controls">
+      <button id="submit" name="submit" class="btn btn-primary" type="button" (click)="insert()">ADD</button>
+    </div>
+  </div> -->
+
+
+  <!-- <legend>Other Details</legend> -->
+
+<!-- Text input-->
+<!-- <div class="control-group">
+  <label class="control-label" for="full_name">Achievements</label>
+  <div class="controls">
+    <input id="full_name" name="full_name" placeholder="Enter your Achievements" class="input-xlarge" type="text" [(ngModel)]="http.Updatedata.achievements">
+      </div>
+</div> -->
+
+
+<!-- Text input-->
+<!-- <div *ngFor="let i of http.Updatedata.languages">
+<div class="control-group">
+  <label class="control-label" for="lang">Known Languages</label>
+  <div class="controls">                     
+    
+    <input type="text" id="lang" name="lang"placeholder="Enter your knwon languages" [(ngModel)]="i.language">
+  </div>
+</div>
+</div>
+
+<div class="control-group">
+    <label class="control-label" for="submit"></label>
+    <div class="controls">
+      <button id="submit" name="submit" class="btn btn-primary" type="button" (click)="insert2()">ADD</button>
+    </div>
+  </div>
+ -->
+
+
+
+
+
+
+
+
+<!-- Button -->
+<!-- <div class="control-group">
+  <label class="control-label" for="submit"></label>
+  <div class="controls">
+    <button id="submit" name="submit" class="btn btn-primary" type="submit">Submit</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+</div> --> 
+

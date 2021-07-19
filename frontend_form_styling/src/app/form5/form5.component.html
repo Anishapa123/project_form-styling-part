@@ -1,0 +1,62 @@
+
+<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+
+   <body>
+      <div class="container">
+      <div class="text">
+        Photo
+      </div>
+      <form action="#" (ngSubmit)="resumedata5()">
+         <div class="form-row">
+            <div class="input-data">
+               <input type="file" required  id="photo" name="image"  multiple (change)="selectImage($event)">
+               <button id="submit" name="submit" type="button" class="btn btn-primary" (click)=upload()>upload image</button>
+               <div class="underline"></div>
+               <label for=""></label>
+            </div>
+         </div>
+        
+        <br>   
+            <div class="form-row submit-btn">
+               <div class="input-data">
+                  <div class="inner"></div>
+                  <input type="submit" id="submit" name="submit" value="Select Template">   
+            </div>
+            </div>
+      </form>
+      </div>
+   </body>
+
+<!-- <div class="container">
+	<div class="row">
+	<form class="form-horizontal" (ngSubmit)="resumedata5()">
+<fieldset>
+
+<!File Button --> 
+<!-- <div class="control-group">
+  <label class="control-label" for="photo">Photo</label>
+  <div class="controls">
+    <input id="photo" name="image" class="input-file" type="file" multiple (change)="selectImage($event)">
+    <button id="submit" name="submit" type="button" class="btn btn-primary" (click)=upload()>upload image</button>
+  </div>
+</div> -->
+
+
+
+<!-- Button -->
+<!-- <div class="control-group">
+  <label class="control-label" for="submit"></label>
+  <div class="controls">
+    <button id="submit" name="submit" class="btn btn-primary" type="submit">Select Template</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+
+	</div>
+</div> --> 

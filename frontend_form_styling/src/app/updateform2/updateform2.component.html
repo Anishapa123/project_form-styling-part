@@ -1,0 +1,122 @@
+<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<body>
+  <div class="container">
+  <div class="text">
+     Educational Details
+  </div>
+  <form action="#" (ngSubmit)="updatedata2()">
+   <div *ngFor="let i of http.Updatedata.education">
+     <div class="form-row">
+        <div class="input-data">
+             <div class="underline"></div>
+           <label for="choose">Choose a Degree</label>
+           <select class="" placeholder="Degree" name="degree" [(ngModel)]="i.degree">
+              <option>Bachelor’s Degree</option>
+              <option>Master’s Degree</option>
+              <option>Doctoral Degree</option>
+            </select>
+        </div>
+<br>
+        <div class="input-data">
+            <input type="text" required name="mobile" [(ngModel)]="i.specialisation">
+           <div class="underline"></div>
+           <label for="">Specialisation</label>
+        </div>
+     </div>
+
+     <div class="form-row">
+        <div class="input-data">
+         <input type="number"  required name="year" [(ngModel)]="i.year">
+           <div class="underline"></div>
+           <label for="">Year of Pass</label>
+        </div>
+        <br>
+        <div class="input-data">
+         <input type="text" required  id="college" name="name" [(ngModel)]="i.name">
+           <div class="underline"></div>
+           <label for="">Institution Name</label>
+        </div>
+     </div>
+     <br />
+     <div class="form-row submit-btn">
+        <div class="input-data">
+           <div class="inner"></div>
+           <input type="button" name="submit"(click)="insert()" value="Add More">
+        </div>
+     
+        <div class="input-data">
+           <div class="inner"></div>
+           <input id="submit" name="submit" type="submit" value="Next">
+        </div>
+     </div>
+   </div>
+</form> 
+</div>
+</body>
+<!-- <div class="container">
+	<div class="row">
+	<form class="form-horizontal" (ngSubmit)="updatedata2()">
+
+
+<!-- Form Name -->
+<!-- <legend>Education Details</legend>
+<div *ngFor="let i of http.Updatedata.education">
+<div class="control-group">
+  <label class="control-label" for="choose">Choose A Degree</label>
+  <select class="control-label" placeholder="Degree" name="degree" [(ngModel)]="i.degree">
+    <option>Bachelor’s Degree</option>
+    <option>Master’s Degree</option>
+    <option>Doctoral Degree</option>
+  </select>
+    </div> -->
+<!-- Text input-->
+<!-- <div class="control-group">
+  <label class="control-label" for="mobile">Specialisation</label>
+  <div class="controls">
+    <input id="mobile" name="mobile" placeholder="Enter Your Degree Name" class="input-xlarge" type="text" [(ngModel)]="i.specialisation">
+    
+  </div>
+</div>
+<!-- Text input-->
+<!-- <div class="control-group">
+  <label class="control-label" for="mobile">Passout Year</label>
+  <div class="controls">
+    <input  type="number" name="year"placeholder="Enter Passout Year" class="input-xlarge" type="text" [(ngModel)]="i.year">
+    
+  </div>
+</div>  -->
+
+<!-- Text input-->
+<!-- <div class="control-group">
+  <label class="control-label" for="mobile">Institution Name</label>
+  <div class="controls">
+    <input id="college"  placeholder="Enter College/University" class="input-xlarge" type="text" name="name" [(ngModel)]="i.name">
+    
+  </div>
+</div>
+</div> -->
+
+<!-- Button -->
+<!-- <div class="control-group">
+  <label class="control-label" for="submit"></label>
+  <div class="controls">
+    <button id="submit" name="submit" class="btn btn-primary" type="button" (click)="insert()">ADD More</button>
+  </div>
+</div> -->
+
+
+<!-- Button -->
+<!-- <div class="control-group">
+  <label class="control-label" for="submit"></label>
+  <div class="controls">
+    <button id="submit" name="submit" class="btn btn-primary">Next</button>
+  </div>
+</div>
+
+
+</form>
+	</div>
+</div>  -->
