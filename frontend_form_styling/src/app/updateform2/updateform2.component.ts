@@ -19,5 +19,8 @@ export class Updateform2Component implements OnInit {
   insert(){
     this.http.Updatedata.education.push({degree:"",specialisation:"",year: "",name:""});
   }
+  del(i){
+    this.http.Updatedata.education.splice(i,1);
+  }
 
 }

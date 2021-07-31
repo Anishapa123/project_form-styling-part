@@ -29,4 +29,12 @@ export class Updateform4Component implements OnInit {
     this.http.Updatedata.languages.push({language:""});
   }
 
+
+  del(i){
+    this.http.Updatedata.skills.splice(i,1);
+  }
+
+  del2(i){
+    this.http.Updatedata.languages.splice(i,1);
+  }
 }

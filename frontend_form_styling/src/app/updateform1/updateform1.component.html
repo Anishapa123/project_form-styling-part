@@ -3,71 +3,81 @@
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
 
+
 <body>
-  <div class="container"(ngSubmit)="updatedata1()">
+  <div class="container">
   <div class="text">
      Personal Details
   </div>
   <form action="#"(ngSubmit)="updatedata1()">
      <div class="form-row">
         <div class="input-data">
-           <input name="full_name" id="full_name" type="text" required   [(ngModel)]="http.Updatedata.name">
+           <input name="full_name" id="full_name" type="text" required   [(ngModel)]="http.Updatedata.name" >
            <div class="underline"></div>
            <label for="">Full Name</label>
         </div>
+        <br>
         <div class="input-data">
-           <input id="email" name="email"type="text" required [(ngModel)]="http.Updatedata.email">
+           <input  name="email"type="text" required [(ngModel)]="http.Updatedata.email">
            <div class="underline"></div>
            <label for="">Email</label>
         </div>
      </div>
      <div class="form-row">
         <div class="input-data">
-           <input id="mobile" name="mobile" type="number" required [(ngModel)]="http.Updatedata.phonenumber">
+           <input  name="mobile" type="number" required [(ngModel)]="http.Updatedata.phonenumber">
            <div class="underline"></div>
            <label for="">Mobile Number</label>
         </div>
+        <br>
         <div class="input-data">
+        <input id="dob" name="dob" class="input-large" placeholder="YYYY-MM-DD" type="date"  [(ngModel)]="http.Updatedata.dob">
+           <!-- <span class="add-on">DOB</span> -->
+           <!-- <div class="underline"></div> -->
            <label for="">Date of Birth</label>
-           <input id="dob" name="dob" type="date" [(ngModel)]="http.Updatedata.dob" >
-           <div class="underline"></div>
-           
         </div>
-       
      </div>
      <div class="form-row">
-        <div class="input-data">
-           <div class="underline"></div>
-           <label for="choose">Gender</label>
-       <select class="" placeholder=""name="degree" [(ngModel)]="http.Updatedata.gender">
-          <option>Male</option>
-          <option>Female</option>
-       </select>
+        <div class="gender-details" style="padding-left: 22px;" >
+           <input type="radio" name="gender" id="dot-1">
+           <input type="radio" name="gender" id="dot-2"> 
+           <span class="gender-title" style="font: size 27px; font-weight:normal;">Gender</span>
+           <div class="category" name="degree" [(ngModel)]="http.Updatedata.gender"> 
+           <label for="dot-1">
+           <span class="dot one"></span>
+           <span class="gender">Male</span>
+        </label>
+        <label for="dot-2">
+           <span class="dot two"></span>
+           <span class="gender">Female</span>
+        </label>
+       </div>  
         </div>
-        <div class="input-data">
-           <input  id="Address" name="Address"   type="text" required  [(ngModel)]="http.Updatedata.address">
+      </div>
+
+     <div class="form-row">
+     <div class="input-data">
+        <input name="Address"   type="text" required  [(ngModel)]="http.Updatedata.address">
            <div class="underline"></div>
            <label for="">Address</label>
         </div>
-     </div>
-     <div class="form-row">
      <div class="input-data textarea">
-        <textarea rows="5" cols="" name="about" required [(ngModel)]="http.Updatedata.about"></textarea>
+        <textarea rows="6" cols="60" required name="about" required [(ngModel)]="http.Updatedata.about"></textarea>
         <div class="underline"></div>
         <label for="">About You</label>
-        <br />
+        
         <div class="form-row submit-btn">
            <div class="input-data">
               <div class="inner"></div>
-              <input  id="submit" name="submit" type="submit" value="Next">
+              <input id="submit" name="submit" type="submit" value="Next">
            </div>
         </div>
      </div>
   </div>
   </form>
-</div>
-
+  </div>
 </body>
+
 
 
 

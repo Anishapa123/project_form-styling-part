@@ -12,7 +12,9 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head> -->
-   <body>
+   
+
+    <body>
       <div class="container">
         <div class="text">
           Skills
@@ -24,18 +26,22 @@
               <div *ngFor="let i of http.Resumedata.skills">
                 <div class="input-data">
                      <input type="text" required  name="skill" [(ngModel)]="i.skill">
-                      <button class="btn btn-danger" type="button" (click)="del(i)">Remove</button> 
+                      <button class="btn btn-danger" type="button" (click)="del(i)" style="height: 55%;">-</button> 
                  <div class="underline"></div>
                <label for=""> Skills</label> 
               </div>
-              <br>
-            <div class="form-row submit-btn">
+            </div>
+        <br>
+        <br>
+        <br>
+        <br><br><br><br>
+            <div class="form-row submit-btn"style="width: 35%;" >
               <div class="input-data">
-                 <div class="inner"></div>
-                 <input type="submit" id="submit" name="submit"(click)="insert()"value="Add" >
-              </div> 
+                 <div class="inner" style="text-align: center;"></div>
+                 <input type="button"  id="submit" name="submit" (click)="insert()" value="Add">
            </div>
-   </div>
+         </div>
+   
  </div>
 
      <div class="form-row">
@@ -47,26 +53,33 @@
      <br>
      <br>
 
-        <div class="input-data">
+        <div class="input-data" >
                <input type="text" required id="full_name" name="full_name" [(ngModel)]="http.Resumedata.achievements">
-               <div class="underline"></div>
+               <div class="underline" ></div>
+               <br>
                <label for="">Achievements</label>
         </div>
-
-            <div *ngFor="let i of http.Resumedata.languages">
-      <div class="input-data">
+        <br>
+        <br>
+        <br>
+      <div>
+            <div *ngFor="let i of http.Resumedata.languages">  
+              <div class="input-data" >
               <input type="text" required id="lang" name="lang" [(ngModel)]="i.language">
-               <button class="btn btn-danger" type="button" (click)="del2(i)">Remove</button>
-               <div class="underline"></div>
-               <label for="">Known Languages</label>
+               <button class="btn btn-danger" type="button" (click)="del2(i)"style="height: 55%;">-</button>
+               <div class="underline" ></div>
+               <label for="" style="font-size: 14px; padding-top: 15px;">Known Languages</label>
             </div>
-     </div>
+          </div> 
+        </div>  
+    
     </div> 
     <br>
-  <div class="form-row submit-btn">
-               <div class="input-data">
-                  <div class="inner"></div>
-                  <input type="submit" id="submit" name="submit"(click)="insert2()"value="Add" >
+   
+  <div class="form-row submit-btn" style="width: 35%;">
+               <div class="input-data" >
+                  <div class="inner" style="text-align: center;"></div>
+                  <input type="button " id="submit" name="submit"(click)="insert2()"value="Add" >
        
                </div>
               </div>

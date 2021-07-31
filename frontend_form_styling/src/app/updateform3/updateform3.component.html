@@ -9,8 +9,8 @@
     Work Experience
 
   </div>
-  <form action="#"(ngSubmit)="updatedata3()">
-    <div *ngFor="let i of http.Updatedata.job">
+  <form action="#" (ngSubmit)="updatedata3()">
+ <div *ngFor="let i of http.Updatedata.job">
      <div class="form-row">
         <div class="input-data">
            <input type="text" required id="job" name="job"  [(ngModel)]="i.jobname">
@@ -22,7 +22,7 @@
         <div class="input-data">
            <input type="text" required id="organisation" name="name"  [(ngModel)]="i.companyname">
            <div class="underline"></div>
-           <label for="">Organization Name </label>
+           <label for=""> Organization Name  </label>
         </div>
      </div>
 
@@ -31,31 +31,33 @@
         <div class="input-data">
            <input type="text" required id="exp-year" name="jobyear"  [(ngModel)]="i.jobyear">
            <div class="underline"></div>
-           <label for="">Experience in Year </label>
+           <label for=""> Experience in Year </label>
         </div>  
 
         <br/>
      <div class="input-data textarea">
         <textarea rows="8" cols="80" required id="Address" name="Description"  [(ngModel)]="i.jobdes"></textarea>
-  
+        <!-- <button class="btn btn-danger" type="button" (click)="del(i)"style="height: 55%;">-</button>  -->
         <div class="underline"></div>
         <label for="">Job Description</label>
      </div>
       </div>
+    </div>
 <br>
-        <div class="form-row submit-btn">
+        <div class="form-row submit-btn" style="width: 35%;">
            <div class="input-data">
               <div class="inner"></div>
-              <input type="submit"  id="submit" name="submit" (click)="insert()" value="Add">
+              <input type="button"  id="submit" name="submit" (click)="insert()" value="Add">
         </div>
-        
+      </div>
+      <div class="form-row submit-btn">
           <div class="input-data">
              <div class="inner"></div>
              <input type="submit" value="Next" id="next" name="submit">
             </div>
           </div>
 
-        </div>
+        
     </form> 
   </div>
  </body>

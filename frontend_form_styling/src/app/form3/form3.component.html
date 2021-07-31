@@ -7,11 +7,11 @@
 	<div class="row">
 	<form class="form-horizontal">
 <fieldset> -->
- <html lang="en" dir="ltr">
+ <!-- <html lang="en" dir="ltr">
     <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-   </head> 
+   </head>  -->
    <body>
       <div class="container">
       <div class="text">
@@ -20,7 +20,7 @@
 
       </div>
       <form action="#" (ngSubmit)="resumedata3()">
-        <div *ngFor="let i of http.Resumedata.job">
+     <div *ngFor="let i of http.Resumedata.job">
          <div class="form-row">
             <div class="input-data">
                <input type="text" required id="job" name="job"  [(ngModel)]="i.jobname">
@@ -47,25 +47,27 @@
             <br/>
          <div class="input-data textarea">
             <textarea rows="8" cols="80" required id="Address" name="Description"  [(ngModel)]="i.jobdes"></textarea>
-            <button class="btn btn-danger" type="button" (click)="del(i)">Remove</button> 
+            <button class="btn btn-danger" type="button" (click)="del(i)"style="height: 55%;">-</button> 
             <div class="underline"></div>
             <label for="">Job Description</label>
          </div>
           </div>
+        </div>
 <br>
-            <div class="form-row submit-btn">
+            <div class="form-row submit-btn" style="width: 35%;">
                <div class="input-data">
                   <div class="inner"></div>
-                  <input type="submit"  id="submit" name="submit" (click)="insert()" value="Add">
+                  <input type="button"  id="submit" name="submit" (click)="insert()" value="Add">
             </div>
-            
+          </div>
+          <div class="form-row submit-btn">
               <div class="input-data">
                  <div class="inner"></div>
                  <input type="submit" value="Next" id="next" name="submit">
                 </div>
               </div>
-
-            </div>
+    
+            
         </form> 
       </div>
      </body>

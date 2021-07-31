@@ -21,15 +21,17 @@
          <form action="#"(ngSubmit)="resumedata2()">
           <div *ngFor="let i of http.Resumedata.education">
             <div class="form-row">
-               <div class="input-data">
+               <div class="input-data" style="font-family: sans-serif; font-weight:bolder;">
                     <!-- <div class="underline"></div> -->
-                  <label for="choose">Choose a Degree</label>
-                  <select class="" placeholder="Degree" name="degree" [(ngModel)]="i.degree">
-                     <option>Bachelor’s Degree</option>
-                     <option>Master’s Degree</option>
-                     <option>Doctoral Degree</option>
-                   </select>
-               </div>
+                    <option selected>Choose A Degree</option>
+              <select class="control-label" style="border-color: rgb(143, 198, 243);" placeholder="Degree" name="degree" [(ngModel)]="i.degree">
+                        <option>Bachelor’s Degree</option>
+                        <option>Master’s Degree</option>
+                        <option>Doctoral Degree</option>
+                      </select>
+                    </div>
+               
+
 <br>
                <div class="input-data">
                    <input type="text" required name="mobile" [(ngModel)]="i.specialisation">
@@ -49,12 +51,14 @@
                 <input type="text" required  name="name" [(ngModel)]="i.name">
                   <div class="underline"></div>
                   <label for=""> Institution Name </label>
-                 <span class="btn btn-danger"(click)="del(i)">-</span>
-          
+                 <span class="btn btn-danger" (click)="del(i)" style="height: 55%;">-</span>
+                </div>
                </div>
             </div>
-            <br />
-            <div class="form-row submit-btn">
+            <br>
+            <br>
+            <br>
+            <div class="form-row submit-btn" >
                <div class="input-data">
                   <div class="inner"></div>
                   <input type="button" name="submit"(click)="insert()" value="Add More">
@@ -67,7 +71,7 @@
                 </div>
               
             </div>
-          </div>
+         
       </form> 
     </div>
    </body>

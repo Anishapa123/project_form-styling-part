@@ -68,7 +68,7 @@ form .form-row .textarea{
   position: absolute;
   pointer-events: none;
   bottom: 10px;
-  font-size: 16px;
+  font-size: 14px;
   transition: all 0.3s ease;
 }
 .textarea label{
@@ -128,7 +128,7 @@ form .form-row .textarea{
 }
 @media (max-width: 700px) {
   .container .text{
-    font-size: 30px;
+    font-size: 35px;
   }
   .container form{
     padding: 10px 0 0 0;
