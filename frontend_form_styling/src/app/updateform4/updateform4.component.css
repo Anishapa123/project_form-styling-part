@@ -56,7 +56,7 @@ form .form-row .textarea{
 }
 .input-data input:focus ~ label, .textarea textarea:focus ~ label,
 .input-data input:valid ~ label, .textarea textarea:valid ~ label{
-  transform: translateY(-20px);
+  transform: translateY(-17px);
   font-size: 14px;
   color: #3498db;
 }
